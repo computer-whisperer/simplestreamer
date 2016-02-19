@@ -1,6 +1,6 @@
 # simplestreamer
 
-This is a tiny (< 100 loc) peer-to-peer data-streaming library designed for high-frequency status data.
+This is a tiny (< 150 loc) peer-to-peer data-streaming library designed for high-frequency status data.
 It uses pickle underneath to serialize the data, so you can dump any python object through it.
 
 You can install it with

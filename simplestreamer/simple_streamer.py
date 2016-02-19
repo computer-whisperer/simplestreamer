@@ -24,7 +24,7 @@ class SimpleStreamer:
         self.subscription_update_thread.start()
 
     def _data_receive_thread(self):
-        self.socket.bind(("127.0.0.1", self.port))
+        self.socket.bind(("0.0.0.0", self.port))
         while not self._stop:
             str_dat, client_id = self.socket.recvfrom(1024)
             dict_data = pickle.loads(str_dat)
